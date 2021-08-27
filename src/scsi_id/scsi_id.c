@@ -38,6 +38,8 @@
 #include "scsi_id.h"
 #include "udev-util.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static const struct option options[] = {
         { "device",             required_argument, NULL, 'd' },
         { "config",             required_argument, NULL, 'f' },

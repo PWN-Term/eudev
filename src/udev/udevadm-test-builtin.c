@@ -33,6 +33,8 @@
 
 #include "udev.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static void help(struct udev *udev) {
         printf("%s builtin [--help] COMMAND SYSPATH\n\n"
                "Test a built-in command.\n\n"

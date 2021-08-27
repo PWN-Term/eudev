@@ -26,6 +26,8 @@
 
 #include "udev.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static int adm_version(struct udev *udev, int argc, char *argv[]) {
         printf("%s\n", UDEV_VERSION);
         return 0;

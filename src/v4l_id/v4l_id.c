@@ -32,6 +32,8 @@
 
 #include "util.h"
 
+static char *program_invocation_short_name = "eudev";
+
 int main(int argc, char *argv[]) {
         static const struct option options[] = {
                 { "help", no_argument, NULL, 'h' },

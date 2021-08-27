@@ -98,6 +98,13 @@ char *path_make_absolute(const char *p, const char *prefix) {
         return strjoin(prefix, "/", p, NULL);
 }
 
+char *get_current_dir_name(void)
+{
+	char pwd[PATH_MAX];
+
+	return getcwd(pwd, sizeof(pwd)) == NULL ? NULL : strdup(pwd);
+}
+
 char *path_make_absolute_cwd(const char *p) {
         _cleanup_free_ char *cwd = NULL;
 

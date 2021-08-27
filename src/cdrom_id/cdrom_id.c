@@ -153,7 +153,7 @@ static void scsi_cmd_init(struct udev *udev, struct scsi_cmd *cmd)
         cmd->sg_io.mx_sb_len = sizeof(cmd->_sense);
         cmd->sg_io.cmdp = cmd->cgc.cmd;
         cmd->sg_io.sbp = cmd->_sense.u;
-        cmd->sg_io.flags = SG_FLAG_LUN_INHIBIT | SG_FLAG_DIRECT_IO;
+        cmd->sg_io.flags = SG_FLAG_UNUSED_LUN_INHIBIT | SG_FLAG_DIRECT_IO;
 }
 
 static void scsi_cmd_set(struct udev *udev, struct scsi_cmd *cmd, size_t i, unsigned char arg)

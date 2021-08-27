@@ -35,6 +35,8 @@
 #include "udev.h"
 #include "udev-util.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static bool udev_exit;
 
 static void sig_handler(int signum) {

@@ -38,6 +38,8 @@
 static int verbose;
 static int dry_run;
 
+static char *program_invocation_short_name = "eudev";
+
 static void exec_list(struct udev_enumerate *udev_enumerate, const char *action) {
         struct udev_list_entry *entry;
 

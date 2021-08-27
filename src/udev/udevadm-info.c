@@ -34,6 +34,8 @@
 #include "udev-util.h"
 #include "udevadm-util.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static bool skip_attribute(const char *name) {
         static const char* const skip[] = {
                 "uevent",

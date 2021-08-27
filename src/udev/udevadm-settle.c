@@ -36,6 +36,8 @@
 #include "udev-util.h"
 #include "util.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static void help(void) {
         printf("%s settle OPTIONS\n\n"
                "Wait for pending udev events.\n\n"

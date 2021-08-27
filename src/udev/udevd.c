@@ -54,6 +54,8 @@
 #include "fileio.h"
 #include "hashmap.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static struct udev_rules *rules;
 static struct udev_ctrl *udev_ctrl;
 static struct udev_ctrl_connection *udev_ctrl_conn;

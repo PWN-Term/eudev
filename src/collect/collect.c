@@ -42,6 +42,8 @@
 #define BUFSIZE 16
 #define UDEV_ALARM_TIMEOUT 180
 
+static char *program_invocation_short_name = "eudev";
+
 enum collect_state {
         STATE_NONE,
         STATE_OLD,

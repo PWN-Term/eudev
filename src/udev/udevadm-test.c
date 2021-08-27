@@ -31,6 +31,8 @@
 #include "udev.h"
 #include "udev-util.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static void help(void) {
 
         printf("%s test OPTIONS <syspath>\n\n"

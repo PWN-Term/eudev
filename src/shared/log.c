@@ -51,6 +51,8 @@ static bool syslog_is_stream = false;
 static bool show_color = false;
 static bool show_location = false;
 
+static char *program_invocation_short_name = "eudev";
+
 /* Akin to glibc's __abort_msg; which is private and we hence cannot
  * use here. */
 static char *log_abort_msg = NULL;

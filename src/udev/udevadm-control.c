@@ -28,6 +28,8 @@
 #include "udev.h"
 #include "udev-util.h"
 
+static char *program_invocation_short_name = "eudev";
+
 static void print_help(void) {
         printf("%s control COMMAND\n\n"
                "Control the udev daemon.\n\n"

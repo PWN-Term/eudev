@@ -1426,6 +1426,7 @@ static const char* const rlimit_table[_RLIMIT_MAX] = {
 
 DEFINE_STRING_TABLE_LOOKUP(rlimit, int);
 
+#define IPTOS_LOWCOST 0x02
 static const char* const ip_tos_table[] = {
         [IPTOS_LOWDELAY] = "low-delay",
         [IPTOS_THROUGHPUT] = "throughput",
